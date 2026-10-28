@@ -8,34 +8,43 @@ export default function ProfileScreen() {
 
   return (
     <ScrollView style={styles.container} contentContainerStyle={styles.content}>
-      {/* Digital Member / Staff ID Card */}
+      {/* Digital Savings & Loan Passbook Cover */}
       <View style={styles.idCard}>
         <View style={styles.cardTop}>
-          <Text style={styles.cardOrg}>SOMITY MANAGEMENT SYSTEM COOPERATIVE</Text>
+          <Text style={styles.cardOrg}>এস, এম ক্ষুদ্র সঞ্চয় ও ঋণদান সমবায় সমিতি লিঃ</Text>
           <View style={styles.cardPill}>
-            <Text style={styles.cardPillText}>MEMBER CARD</Text>
+            <Text style={styles.cardPillText}>রেজিঃ ট-ক ২৮৪০/২১</Text>
           </View>
+        </View>
+
+        <View style={{ alignItems: 'center', marginBottom: 14 }}>
+          <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#86efac', letterSpacing: 0.5 }}>
+            সঞ্চয় ও ঋণের পাশ বই
+          </Text>
+          <Text style={{ fontSize: 10, color: '#cbd5e1', marginTop: 2 }}>
+            প্রধান কার্যালয়: এলেঙ্গা, কালিহাতী, টাঙ্গাইল
+          </Text>
         </View>
 
         <View style={styles.cardBody}>
           <View style={styles.cardAvatar}>
-            <User size={32} color="#ffffff" />
+            <Text style={{ color: '#ffffff', fontWeight: 'bold', fontSize: 16 }}>এস,এম</Text>
           </View>
           <View style={styles.cardDetails}>
-            <Text style={styles.cardName}>Md. Rafiqul Islam</Text>
-            <Text style={styles.cardNameBn}>মোঃ রফিকুল ইসলাম</Text>
-            <Text style={styles.cardAcc}>A/C: M-10023</Text>
+            <Text style={styles.cardName}>মোঃ রফিকুল ইসলাম</Text>
+            <Text style={{ fontSize: 12, color: '#bbf7d0', marginTop: 1 }}>পিতা: মৃত আব্দুল জলিল</Text>
+            <Text style={{ fontSize: 11, color: '#e2e8f0', marginTop: 1 }}>ঠিকানা: এলেঙ্গা, কালিহাতী, টাঙ্গাইল</Text>
           </View>
         </View>
 
         <View style={styles.cardBottom}>
           <View>
-            <Text style={styles.cardMetaLabel}>GROUP (সমিতি)</Text>
-            <Text style={styles.cardMetaVal}>Golap Group (০৪)</Text>
+            <Text style={styles.cardMetaLabel}>কেন্দ্র নং (CENTER NO)</Text>
+            <Text style={styles.cardMetaVal}>কেন্দ্র-০৪ (এলেঙ্গা)</Text>
           </View>
-          <View>
-            <Text style={styles.cardMetaLabel}>STATUS</Text>
-            <Text style={styles.cardMetaVal}>ACTIVE MEMBER</Text>
+          <View style={{ alignItems: 'flex-end' }}>
+            <Text style={styles.cardMetaLabel}>সঞ্চয়ী হিসাব নং (A/C NO)</Text>
+            <Text style={styles.cardMetaVal}>এস-১০২৪</Text>
           </View>
         </View>
       </View>

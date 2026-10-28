@@ -12,7 +12,12 @@ export const API_BASE_URL = Platform.select({
 });
 
 export const APP_CONFIG = {
-  name: 'Somity Management System',
+  name: 'এস, এম ক্ষুদ্র সঞ্চয় ও ঋণদান সমবায় সমিতি লিঃ',
+  englishName: 'S.M. Khudra Sanchay O Rindan Samabay Samity Limited',
+  shortName: 'S.M. Somobay Somity (এস, এম)',
+  registrationNo: 'ট-ক ২৮৪০/২১',
+  headOffice: 'Elenga, Kalihati, Tangail, Bangladesh',
+  passbookTitle: 'সঞ্চয় ও ঋণের পাশ বই',
   version: '1.0.0',
   currencySymbol: '৳',
 };

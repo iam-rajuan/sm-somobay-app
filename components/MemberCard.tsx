@@ -7,6 +7,7 @@ interface MemberCardProps {
   name: string;
   nameBangla?: string;
   accountNo: string;
+  centerNo?: string;
   mobile: string;
   groupName: string;
   savingsBalance?: number;
@@ -17,6 +18,7 @@ export const MemberCard: React.FC<MemberCardProps> = ({
   name,
   nameBangla,
   accountNo,
+  centerNo,
   mobile,
   groupName,
   savingsBalance = 0,
@@ -30,7 +32,9 @@ export const MemberCard: React.FC<MemberCardProps> = ({
         </View>
         <View style={styles.info}>
           <Text style={styles.name}>{nameBangla || name}</Text>
-          <Text style={styles.accountNo}>{accountNo} • {groupName}</Text>
+          <Text style={styles.accountNo}>
+            হিসাব: {accountNo} {centerNo ? `• ${centerNo}` : `• ${groupName}`}
+          </Text>
         </View>
       </View>
 

@@ -50,9 +50,9 @@ export default function MobileDashboardScreen() {
           <View style={styles.verifiedBox}>
             <View style={styles.verifiedHeader}>
               <CheckCircle size={16} color="#16a34a" />
-              <Text style={styles.verifiedText}>Verified: Md. Rafiqul Islam (M-10023)</Text>
+              <Text style={styles.verifiedText}>যাচাইকৃত: মোঃ রফিকুল ইসলাম (এস-১০২৪)</Text>
             </View>
-            <Text style={styles.verifiedSub}>Golap Samity • Savings: ৳24,500 • Loan Due: ৳1,500</Text>
+            <Text style={styles.verifiedSub}>কেন্দ্র-০৪ (এলেঙ্গা) • পিতা: আব্দুল জলিল • সঞ্চয়: ৳২৪,৫০০ • ঋণ: ৳১,৫০০</Text>
           </View>
         )}
       </View>
@@ -71,23 +71,24 @@ export default function MobileDashboardScreen() {
           <View style={[styles.metricIcon, { backgroundColor: '#e0f2fe' }]}>
             <Users size={20} color="#0284c7" />
           </View>
-          <Text style={styles.metricLabel}>Assigned Group</Text>
-          <Text style={styles.metricValue}>32 Members</Text>
+          <Text style={styles.metricLabel}>Assigned Center</Text>
+          <Text style={styles.metricValue}>কেন্দ্র-০৪ (৩২ জন)</Text>
         </View>
       </View>
 
       {/* Assigned Samity Members List */}
       <View style={styles.sectionHeader}>
-        <Text style={styles.sectionTitle}>Today's Collection Queue</Text>
-        <Text style={styles.sectionBadge}>Golap Group (গোলাপ)</Text>
+        <Text style={styles.sectionTitle}>আজকের আদায় তালিকা (কেন্দ্র-০৪)</Text>
+        <Text style={styles.sectionBadge}>এলেঙ্গা কেন্দ্র</Text>
       </View>
 
       <MemberCard
         name="Md. Rafiqul Islam"
         nameBangla="মোঃ রফিকুল ইসলাম"
-        accountNo="M-10023"
+        accountNo="এস-১০২৪"
+        centerNo="কেন্দ্র-০৪"
         mobile="+880 1712-345678"
-        groupName="Golap Samity"
+        groupName="এলেঙ্গা কেন্দ্র"
         savingsBalance={24500}
         loanBalance={65000}
       />
@@ -95,9 +96,10 @@ export default function MobileDashboardScreen() {
       <MemberCard
         name="Farhana Akhter"
         nameBangla="ফারহানা আক্তার"
-        accountNo="M-10045"
+        accountNo="এস-১০২৫"
+        centerNo="কেন্দ্র-০৪"
         mobile="+880 1819-876543"
-        groupName="Golap Samity"
+        groupName="এলেঙ্গা কেন্দ্র"
         savingsBalance={12000}
         loanBalance={30000}
       />
@@ -105,9 +107,10 @@ export default function MobileDashboardScreen() {
       <MemberCard
         name="Kabir Hossain"
         nameBangla="কবীর হোসেন"
-        accountNo="M-10088"
+        accountNo="এস-১০২৬"
+        centerNo="কেন্দ্র-০৪"
         mobile="+880 1911-223344"
-        groupName="Golap Samity"
+        groupName="এলেঙ্গা কেন্দ্র"
         savingsBalance={8500}
         loanBalance={0}
       />

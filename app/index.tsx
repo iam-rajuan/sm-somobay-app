@@ -14,10 +14,10 @@ export default function RoleSelectorScreen() {
           <View style={styles.logoBadge}>
             <Smartphone size={32} color="#ffffff" />
           </View>
-          <Text style={styles.title}>সমিতি ম্যানেজমেন্ট সিস্টেম</Text>
-          <Text style={styles.subtitle}>Somity Management System Mobile</Text>
+          <Text style={styles.title}>এস, এম সমবায় সমিতি</Text>
+          <Text style={styles.subtitle}>এস, এম ক্ষুদ্র সঞ্চয় ও ঋণদান সমবায় সমিতি লিঃ</Text>
           <Text style={styles.description}>
-            Select your operating mode to access field collection or your personal member passbook.
+            রেজিঃ নং ট-ক ২৮৪০/২১ • প্রধান কার্যালয়: এলেঙ্গা, কালিহাতী, টাঙ্গাইল। সঞ্চয় ও ঋণের পাশ বই মোবাইল অ্যাপ।
           </Text>
         </View>
 

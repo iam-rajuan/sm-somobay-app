@@ -37,9 +37,9 @@ export default function CollectionsScreen() {
   return (
     <ScrollView style={styles.container} contentContainerStyle={styles.content}>
       <View style={styles.memberBanner}>
-        <Text style={styles.memberLabel}>COLLECTION FOR</Text>
-        <Text style={styles.memberName}>Md. Rafiqul Islam (রফিকুল)</Text>
-        <Text style={styles.memberAccount}>Account: M-10023 • Mobile: 01712-345678</Text>
+        <Text style={styles.memberLabel}>সঞ্চয় ও ঋণের পাশ বই • আদায় এন্ট্রি</Text>
+        <Text style={styles.memberName}>মোঃ রফিকুল ইসলাম (রফিকুল)</Text>
+        <Text style={styles.memberAccount}>সঞ্চয়ী হিসাব: এস-১০২৪ • কেন্দ্র-০৪ (এলেঙ্গা) • মোবা: 01712-345678</Text>
       </View>
 
       <View style={styles.formCard}>
