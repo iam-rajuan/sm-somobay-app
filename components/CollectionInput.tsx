@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, TextInput, StyleSheet } from 'react-native';
+import { useApp } from '../context/AppContext';
 
 interface CollectionInputProps {
   label: string;
@@ -14,17 +15,19 @@ export const CollectionInput: React.FC<CollectionInputProps> = ({
   onChangeText,
   placeholder = '0',
 }) => {
+  const { colors } = useApp();
+
   return (
     <View style={styles.container}>
-      <Text style={styles.label}>{label}</Text>
-      <View style={styles.inputWrapper}>
-        <Text style={styles.currencyPrefix}>৳</Text>
+      <Text style={[styles.label, { color: colors.textSecondary }]}>{label}</Text>
+      <View style={[styles.inputWrapper, { backgroundColor: colors.card, borderColor: colors.border }]}>
+        <Text style={[styles.currencyPrefix, { color: colors.primary }]}>৳</Text>
         <TextInput
-          style={styles.input}
+          style={[styles.input, { color: colors.text }]}
           value={value}
           onChangeText={onChangeText}
           placeholder={placeholder}
-          placeholderTextColor="#94a3b8"
+          placeholderTextColor={colors.textMuted}
           keyboardType="numeric"
         />
       </View>
@@ -39,30 +42,25 @@ const styles = StyleSheet.create({
   label: {
     fontSize: 12,
     fontWeight: '600',
-    color: '#475569',
-    marginBottom: 4,
+    marginBottom: 5,
   },
   inputWrapper: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#ffffff',
     borderRadius: 8,
     borderWidth: 1,
-    borderColor: '#cbd5e1',
     paddingHorizontal: 12,
-    height: 44,
+    height: 46,
   },
   currencyPrefix: {
     fontSize: 16,
     fontWeight: 'bold',
-    color: '#16a34a',
     marginRight: 6,
   },
   input: {
     flex: 1,
     fontSize: 16,
     fontWeight: '600',
-    color: '#0f172a',
+    fontFamily: 'monospace',
   },
 });
-
